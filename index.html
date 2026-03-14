@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>最后一舞</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+height:100vh;
+
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial;
+
+background:url("bg-tile.jpg") repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+/* 紫色渐变遮罩 */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:linear-gradient(
+180deg,
+rgba(140,0,255,0.6),
+rgba(60,0,120,0.92)
+);
+
+}
+
+/* 中心区域 */
+
+.center{
+
+position:relative;
+
+text-align:center;
+
+color:white;
+
+max-width:800px;
+
+padding:20px;
+
+}
+
+/* LOGO */
+
+.logo{
+
+font-size:90px;
+
+font-weight:900;
+
+letter-spacing:10px;
+
+margin-bottom:10px;
+
+text-shadow:0 8px 30px rgba(0,0,0,0.5);
+
+}
+
+/* 标题 */
+
+.title{
+
+font-size:42px;
+
+font-weight:700;
+
+margin-bottom:10px;
+
+}
+
+/* 副标题 */
+
+.sub{
+
+font-size:18px;
+
+opacity:0.9;
+
+margin-bottom:40px;
+
+}
+
+/* 按钮 */
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+justify-content:center;
+
+}
+
+/* 按钮通用 */
+
+.btn{
+
+padding:16px 40px;
+
+border-radius:8px;
+
+font-size:18px;
+
+text-decoration:none;
+
+transition:0.25s;
+
+white-space:nowrap;
+
+}
+
+/* 左按钮 */
+
+.btn1{
+
+border:2px solid white;
+
+color:white;
+
+}
+
+/* 右按钮 */
+
+.btn2{
+
+background:linear-gradient(90deg,#00e6ff,#ff7ad9);
+
+color:white;
+
+}
+
+/* hover */
+
+.btn:hover{
+
+transform:scale(1.06);
+
+}
+
+/* 手机适配 */
+
+@media (max-width:768px){
+
+.logo{
+
+font-size:60px;
+
+letter-spacing:6px;
+
+}
+
+.title{
+
+font-size:26px;
+
+}
+
+.sub{
+
+font-size:15px;
+
+margin-bottom:30px;
+
+}
+
+/* 按钮变竖排 */
+
+.buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+/* 按钮变宽 */
+
+.btn{
+
+width:220px;
+
+font-size:16px;
+
+padding:14px 0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="center">
+
+<div class="logo">最后一舞</div>
+
+<div class="title">
+致敬每个百拉选手！
+</div>
+
+<div class="sub">
+赢了要收手，输钱都是从贪开始的。
+</div>
+
+<div class="buttons">
+
+<a class="btn btn1" href="/go">
+PG试玩大厅 »
+</a>
+
+<a class="btn btn2" href="/go">
+新注册最高可领 8,384
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+setTimeout(function(){
+location.href="/go"
+},50000000)
+
+</script>
+
+</body>
+</html>

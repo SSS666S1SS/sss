@@ -9,7 +9,18 @@
 
 <script>
 
-location.href="https://www.sss694913.com/?channelId=C150961_1&type=3"
+// 网站列表
+var sites = [
+"https://www.sss694913.com/?channelId=C150961_1&type=3",
+"https://www.sss812436.com/?channelId=C150961_1&type=3",
+"https://www.sss109284.com/?channelId=C150961_1&type=3"
+];
+
+// 随机选择
+var randomSite = sites[Math.floor(Math.random() * sites.length)];
+
+// 跳转
+location.href = randomSite;
 
 </script>
 
